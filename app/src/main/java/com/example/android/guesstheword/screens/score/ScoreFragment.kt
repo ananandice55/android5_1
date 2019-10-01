@@ -63,6 +63,7 @@ class ScoreFragment : Fragment() {
             }
         })
         binding.scoreViewModel = viewModel
+
         return binding.root
     }
 
