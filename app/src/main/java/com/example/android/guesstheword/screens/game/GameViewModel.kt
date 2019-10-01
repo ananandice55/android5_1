@@ -78,13 +78,13 @@ class GameViewModel : ViewModel() {
     /**
      * Moves to the next _word in the list
      */
-   fun nextWord() {
+  fun nextWord() {
         if (wordList.isEmpty()) {
             onGameFinish()
-        }else{//Select and remove a _word from the list
+        } else {
+            //Select and remove a _word from the list
             _word.value = wordList.removeAt(0)
         }
-
     }
     fun onGameFinish() {
         _eventGameFinish.value = true
